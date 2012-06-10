@@ -9,7 +9,6 @@ from sys import version_info
 
 from pyflakes import messages as m
 from pyflakes.test import harness
-import time
 
 class Test(harness.Test):
 
@@ -40,7 +39,6 @@ class Test(harness.Test):
         Test that shadowing a function definition in a class suite with another
         one raises a warning.
         """
-        time.sleep( 60 )
         self.flakes('''
         class A:
             def a(): pass
