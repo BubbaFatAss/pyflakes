@@ -39,7 +39,6 @@ class Test(harness.Test):
         Test that shadowing a function definition in a class suite with another
         one raises a warning.
         """
-		foo.bar()
         self.flakes('''
         class A:
             def a(): pass
